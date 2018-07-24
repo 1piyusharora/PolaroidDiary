@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.palabs.polaroiddiary.MainActivity"
+    android:background="@drawable/gradient4"
+
+    >
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="570dp"
+    tools:context="com.palabs.polaroiddiary.MainActivity"
+    android:padding="8dp"
+    >
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:background="@android:color/white"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:id="@+id/relativeLayout">
+
+        <TextView
+            android:id="@+id/textViewDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="15dp"
+            android:hint="date"
+            android:textSize="18dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black"
+            />
+
+        <ImageView
+            android:id="@+id/imageViewPic"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:background="@drawable/bgpol1"
+            android:layout_marginTop="36dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+
+            android:scaleType="centerCrop"
+
+            android:adjustViewBounds="true"
+
+
+            />
+
+        <TextView
+            android:id="@+id/textViewLocation"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="395dp"
+            android:textSize="18dp"
+            android:hint=""
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black"
+            />
+
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/imageButtonCamera"
+        android:onClick="cameraClick"
+        android:longClickable="true"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:background="@drawable/photocamera"
+        android:layout_marginTop="7dp"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:id="@+id/imageButtonLocation"
+        android:onClick="onGPSclicked"
+        android:longClickable="true"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginStart="36dp"
+        android:background="@drawable/placeholder"
+        android:layout_alignTop="@+id/imageButtonCamera"
+        android:layout_toRightOf="@+id/imageButtonCamera"
+        android:layout_toEndOf="@+id/imageButtonCamera" />
+
+    <ImageButton
+        android:id="@+id/imageButtonDownload"
+        android:longClickable="true"
+        android:onClick="downloadClick"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginStart="34dp"
+        android:background="@drawable/downloaddark"
+        android:layout_alignTop="@+id/imageButtonLocation"
+        android:layout_toRightOf="@+id/imageButtonLocation"
+        android:layout_toEndOf="@+id/imageButtonLocation" />
+
+    <ImageButton
+        android:id="@+id/imageButtonShare"
+        android:longClickable="true"
+        android:onClick="shareClicked"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginStart="36dp"
+        android:background="@drawable/sharedark"
+        android:layout_alignTop="@+id/imageButtonDownload"
+        android:layout_toRightOf="@+id/imageButtonDownload"
+        android:layout_toEndOf="@+id/imageButtonDownload" />
+
+
+</RelativeLayout>
+
+
+</ScrollView>
